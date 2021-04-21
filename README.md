@@ -24,7 +24,7 @@ const prefix = require('discord-prefix');
 //if the server doesn't have a set prefix yet
 let defaultPrefix = '!';
 
-client.on('message' (message) => {
+client.on('message', message => {
     //stop code execution if message is received in DMs
     if (!message.guild) return;
 
